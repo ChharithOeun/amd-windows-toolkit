@@ -1,0 +1,19 @@
+# AMD Windows AI Toolkit — core diagnostics requirements
+# These are minimal packages needed to run doctor.py and check_gpu.py.
+# Each individual use case (SD, LLMs, Whisper, ONNX) has its own requirements.
+
+# No third-party packages required for doctor.py / check_gpu.py.
+# All GPU detection is done via PowerShell WMI and system calls.
+
+# ─── Optional: install all AMD backends at once ────────────────────────────
+# Run:  python scripts\setup_env.py
+#
+# Or install manually:
+#
+# pip install torch-directml                     # image gen, DirectML compute
+# pip install onnxruntime-directml               # ONNX inference (NOT onnxruntime)
+# pip install llama-cpp-python                   # local LLMs via Vulkan
+# pip install faster-whisper                     # speech-to-text
+# pip install diffusers transformers accelerate  # HuggingFace pipelines
+# pip install optimum[onnxruntime]               # ONNX model export
+# pip install huggingface-hub                    # model downloads
