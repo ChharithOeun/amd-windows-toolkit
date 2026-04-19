@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# Config (contains user paths/settings)
+config.json
+
+# Models and large files
+models/
+*.gguf
+*.bin
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# Output artifacts
+outputs/
+generated/
+*.png
+*.jpg
+*.jpeg
+*.wav
+*.mp3
+
+# Logs and temp
+*.log
+*.tmp
+dxdiag_tmp.txt
+logs/
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
