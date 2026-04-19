@@ -1,0 +1,14 @@
+{
+  "_comment": "Copy this to config.json and edit as needed.",
+  "doctor": {
+    "quiet": false,
+    "json_output": false
+  },
+  "setup": {
+    "silent": false,
+    "install_optional": false
+  },
+  "repos": {
+    "base_url": "https://github.com/ChharithOeun"
+  }
+}
